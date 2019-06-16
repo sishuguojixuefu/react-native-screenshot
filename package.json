@@ -4,6 +4,21 @@
   "description": "React Native 截屏组件（支持ios、android）",
   "main": "index.js",
   "author": "sishu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sishuguojixuefu/react-native-screenshot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sishuguojixuefu/react-native-screenshot/issues"
+  },
+  "homepage": "https://github.com/sishuguojixuefu/react-native-screenshot#readme",
+  "keywords": [
+    "react-native",
+    "screenshot",
+    "ios",
+    "android"
+  ],
   "scripts": {
     "postversion": "git push --tags && git push && npm publish"
   },
