@@ -65,6 +65,6 @@ captureScreen(
 
 ## 致谢
 
-- [rhdeck/react-native-screenshot-notifier](https://github.com/rhdeck/react-native-screenshot-notifier)
-- [WangZiXiao-ChenDu/react-native-screenshot-observer](https://github.com/WangZiXiao-ChenDu/react-native-screenshot-observer)
-- [gre/react-native-view-shot](https://github.com/gre/react-native-view-shot)
+- [rhdeck/react-native-screenshot-notifier](https://github.com/rhdeck/react-native-screenshot-notifier) for android
+- [WangZiXiao-ChenDu/react-native-screenshot-observer](https://github.com/WangZiXiao-ChenDu/react-native-screenshot-observer) for ios
+- [gre/react-native-view-shot](https://github.com/gre/react-native-view-shot) for captureScreen
