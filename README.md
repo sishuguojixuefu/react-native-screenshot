@@ -15,15 +15,15 @@ $ react-native link react-native-screenshot-notifier
 ### 概览
 
 ```js
-export interface screenshotPropsType {
-  startListener: (callback: (file: any) => void) => void
-  stopListener: () => void
-}
-
 export interface filePropsType {
   id?: string
-  path: string
   fileName?: string
+  path: string
+}
+
+export interface screenshotPropsType {
+  startListener: (callback: (file: filePropsType) => void) => void
+  stopListener: () => void
 }
 
 export const startListener: (callback: (file: filePropsType) => void) => void
