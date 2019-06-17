@@ -1,7 +1,7 @@
 export interface filePropsType {
   id?: string
-  path: string
   fileName?: string
+  path: string
 }
 
 export interface screenshotPropsType {
