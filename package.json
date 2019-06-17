@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "react-native-screenshot-notifier": "1.0.5",
-    "react-native-screenshot-observer": "0.2.1"
+    "react-native-screenshot-observer": "0.2.1",
+    "react-native-view-shot": "2.6.0"
   }
 }
