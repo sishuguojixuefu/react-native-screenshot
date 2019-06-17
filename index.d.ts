@@ -3,7 +3,13 @@ export interface screenshotPropsType {
   stopListener: () => void
 }
 
-export const startListener: (callback: (file: any) => void) => void
+export interface filePropsType {
+  id?: string
+  path: string
+  fileName?: string
+}
+
+export const startListener: (callback: (file: filePropsType) => void) => void
 export const stopListener: () => void
 
 export const screenshot: screenshotPropsType

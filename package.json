@@ -45,6 +45,7 @@
     "typescript": "^3.4.5"
   },
   "dependencies": {
-    "react-native-screenshot-notifier": "1.0.5"
+    "react-native-screenshot-notifier": "1.0.5",
+    "react-native-screenshot-observer": "0.2.1"
   }
 }

@@ -1139,6 +1139,11 @@ react-native-screenshot-notifier@1.0.5:
   resolved "https://registry.yarnpkg.com/react-native-screenshot-notifier/-/react-native-screenshot-notifier-1.0.5.tgz#07ad7a590c19d20a533dc602b3dec08e395c86a4"
   integrity sha512-LyJd/dg8q2B4SYXYF8sjww3qsY4DnsOyB0YpDsk5yO14MgWHYcMsIKyIH3SMmdWrKptwAAlc8oasIIkwqq6e4Q==
 
+react-native-screenshot-observer@0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/react-native-screenshot-observer/-/react-native-screenshot-observer-0.2.1.tgz#51a09199492f8ff1b3b9e281f4506874c1386ab0"
+  integrity sha1-UaCRmUkvj/GzueKB9FBodME4arA=
+
 read-pkg-up@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/read-pkg-up/-/read-pkg-up-2.0.0.tgz#6b72a8048984e0c41e79510fd5e9fa99b3b549be"
