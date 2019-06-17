@@ -1,10 +1,10 @@
 export interface screenshotPropsType {
-  addListener: (callback: (file: any) => void) => void
-  removeListener: () => void
+  startListener: (callback: (file: any) => void) => void
+  stopListener: () => void
 }
 
-export const addListener: (callback: (file: any) => void) => void
-export const removeListener: () => void
+export const startListener: (callback: (file: any) => void) => void
+export const stopListener: () => void
 
 export const screenshot: screenshotPropsType
 export default screenshot

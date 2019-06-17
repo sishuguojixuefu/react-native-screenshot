@@ -1,24 +1,24 @@
-import { addListener as androidAddListener, start, stop } from 'react-native-screenshot-notifier'
+import { addListener, start, stop } from 'react-native-screenshot-notifier'
 import { Platform } from 'react-native'
 
-const addListener =
+const startListener =
   Platform.OS === 'android'
     ? async callback => {
         await start()
-        await androidAddListener(callback)
+        await addListener(callback)
       }
     : () => {}
 
-const removeListener =
+const stopListener =
   Platform.OS === 'android'
     ? async () => {
         await stop()
       }
     : () => {}
 
-export { addListener, removeListener }
+export { startListener, stopListener }
 
 export default {
-  addListener,
-  removeListener,
+  startListener,
+  stopListener,
 }
