@@ -44,7 +44,7 @@
     "prettier": "^1.17.1",
     "typescript": "^3.4.5"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react-native-screenshot-notifier": "1.0.5",
     "react-native-screenshot-observer": "0.2.1",
     "react-native-view-shot": "2.6.0"
