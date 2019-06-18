@@ -1,7 +1,7 @@
 ## 安装
 
 ```sh
-$ yarn add react-native-screenshot react-native-screenshot-notifier react-native-screenshot-observer react-native-view-shot
+$ yarn add @sishuguojixuefu/react-native-screenshot react-native-screenshot-notifier react-native-screenshot-observer react-native-view-shot
 ```
 
 ## link
