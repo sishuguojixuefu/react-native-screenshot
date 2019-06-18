@@ -6,9 +6,9 @@ const { RNScreenshotNotification } = NativeModules
 
 // 截屏
 const captureScreen = async (callback, options) => {
-  const data = await capture(options)
+  const uri = await capture(options)
   callback({
-    path: data.uri,
+    path: uri,
   })
 }
 
