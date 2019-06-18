@@ -21,7 +21,7 @@ export interface screenshotPropsType {
 
 export const ViewShot: any
 export const captureScreen: (callback: (file: filePropsType) => void, options?: optionsPropsType) => void
-export const startListener: (callback: (file: filePropsType) => void) => void
+export const startListener: (callback: (file: filePropsType) => void, options?: optionsPropsType) => void
 export const stopListener: () => void
 
 export const screenshot: screenshotPropsType
