@@ -18,7 +18,10 @@ const startListener = callback => {
     ;(async () => {
       await start()
       console.info('[ScreenShot] startListener')
-      await addListener(callback)
+      await addListener(file => {
+        file.path = `file://${file.path}`
+        callback(file)
+      })
     })()
   } else {
     RNScreenshotNotification.addObserverScreenshot()
