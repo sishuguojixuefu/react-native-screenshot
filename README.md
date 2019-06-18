@@ -41,9 +41,25 @@ export interface screenshotPropsType {
 
 开始监听系统截屏并添加一个回调接收返回的截屏信息
 
+```js
+componentDidMount() {
+  startListener(file => {
+    this.setState({
+      shotImage: file.path,
+    })
+  })
+}
+```
+
 ### stopListener()
 
 停止监听系统监听系统截屏
+
+```js
+componentWillUnmount() {
+  stopListener()
+}
+```
 
 ### captureScreen
 
