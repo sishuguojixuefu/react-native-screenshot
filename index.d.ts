@@ -2,6 +2,7 @@ export interface filePropsType {
   id?: string
   fileName?: string
   path: string
+  uri: string
 }
 
 export interface optionsPropsType {

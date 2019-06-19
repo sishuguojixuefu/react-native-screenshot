@@ -7,9 +7,7 @@ const { RNScreenshotNotification } = NativeModules
 // 截屏
 const captureScreen = async (callback, options) => {
   const uri = await capture(options)
-  callback({
-    path: uri,
-  })
+  callback({ uri })
 }
 
 // 开始监听系统截屏
@@ -19,7 +17,7 @@ const startListener = callback => {
       await start()
       console.info('[ScreenShot] startListener')
       await addListener(file => {
-        file.path = `file://${file.path}`
+        file.uri = `file://${file.path}`
         callback(file)
       })
     })()
@@ -27,6 +25,7 @@ const startListener = callback => {
     RNScreenshotNotification.addObserverScreenshot()
     this.screenshotObserver = DeviceEventEmitter.addListener('ScreenshotObserver', data => {
       callback({
+        uri: `file://${data.imagePath}`,
         path: data.imagePath,
       })
     })

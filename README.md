@@ -43,9 +43,10 @@ export interface screenshotPropsType {
 
 ```js
 componentDidMount() {
-  startListener(file => {
+  startListener(({ uri, path }) => {
+    // android 显示在 image 组件需要使用 uri
     this.setState({
-      shotImage: file.path,
+      shotImage: file.uri,
     })
   })
 }
@@ -69,8 +70,8 @@ componentWillUnmount() {
 import { captureScreen } from '@sishuguojixuefu/react-native-screenshot'
 
 captureScreen(
-  data => {
-    console.log('screenshotPatah', data.path)
+  file => {
+    console.log('screenshotPatah', file.uri)
   },
   {
     format: 'jpg',
