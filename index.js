@@ -7,7 +7,10 @@ const { RNScreenshotNotification } = NativeModules
 // 截屏
 const captureScreen = async (callback, options) => {
   const uri = await capture(options)
-  callback({ uri })
+  callback({
+    uri,
+    path: /^file:\/\/(.*)$/.exec(uri)[1],
+  })
 }
 
 // 开始监听系统截屏
