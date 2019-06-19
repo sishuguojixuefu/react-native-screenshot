@@ -1,6 +1,6 @@
 {
   "name": "@sishuguojixuefu/react-native-screenshot",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "React Native 截屏组件（支持ios、android）",
   "main": "index.js",
   "author": "sishu",
