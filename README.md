@@ -22,7 +22,7 @@ componentDidMount() {
     // path: /xxx/yyy
     // uri: file:///xxx/yyy
     this.setState({
-      shotImage: file.uri,
+      shotImage: uri,
     })
   })
 }
